@@ -1,0 +1,31 @@
+<style>
+            .container {
+                text-align: center;
+            } 
+            button {
+                margin: 20px;
+            }
+    
+            .fas {
+                font-size: 100px;
+            }
+    
+            .far {
+                font-size: 100px;
+            }
+    
+            .table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+            
+        <div class="container">
+                <h1 class="title">Tell your device what to do!</h1><br>
+             
+              <button class="button is-primary" type="submit" ng-click="valider('on')" value="ON">ON </button>
+              <button class="button is-danger" type="submit" ng-click="valider('off')" value="OFF">OFF </button><br><br>
+    
+              <i class="far fa-lightbulb" id="led-on" ng-hide="led_on" ></i>
+              <i class="fas fa-lightbulb" id="led-off" ng-hide="led_off"></i>
+        </div><br><br>

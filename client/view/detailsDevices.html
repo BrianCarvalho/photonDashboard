@@ -1,0 +1,39 @@
+<table class="table is-striped">
+        <thead>
+          <tr>
+            <th><abbr title="numero"></abbr>N°</abbr></th>
+            <th><abbr title="devices">name</abbr></th>
+            <th><abbr title="last_app">delast_app</abbr></th>
+            <th><abbr title="last_ip_address">last_ip_address</abbr></th>
+            <th><abbr title="last_heard">last_heard</abbr></th>
+            <th><abbr title="product_id">product_id</abbr></th>
+            <th><abbr title="connected">connected</abbr></th>
+            <th><abbr title="platform_id">platform_id</abbr></th>
+            <th><abbr title="cellular">cellular</abbr></th>
+            <th><abbr title="status">status</abbr></th>
+            <th><abbr title="serial_number">serial_number</abbr></th>
+            <th><abbr title="current_build_target">current_build_target</abbr></th>
+            <th><abbr title="system_firmware_version">system_firmware_version</abbr></th>
+            <th><abbr title="default_build_target">default_build_target</abbr></th>
+            <th><abbr title="statusCode">statusCode</abbr></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="devices in listDevices">
+            <th>1</th>
+            <td>{{devices.name}}</td>
+            <td>{{devices.delast_app}}</td>
+            <td>{{devices.last_ip_address}}</td>
+            <td>{{devices.last_heard}}</td>
+            <td>{{devices.product_id}}</td>
+            <td>{{devices.cellular}}</td>
+            <td>{{devices.status}}</td>
+            <td>{{devices.serial_number}}</td>
+            <td>{{devices.current_build_target}}</td>
+            <td>{{devices.system_firmware_version}}</td>
+            <td>{{devices.default_build_target}}</td>
+            <td>{{devices.statusCode}}</td>
+        </tr>
+        </tbody>
+        </table>
+    

@@ -1,0 +1,15 @@
+<table class="table is-striped">
+        <thead>
+          <tr>
+            <th><abbr title="numero"></abbr>N°</abbr></th>
+            <th><abbr title="devices">name</abbr></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="devices in listDevices" ng-click="detailsDevices(devices)">
+            <th>{{$index}}</th>
+            <td>{{devices.name}}</td>
+        </tr>
+        </tbody>
+        </table>
+    
